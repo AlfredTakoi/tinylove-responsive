@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global Style */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 80vh;
+  background-image: url("/img/street.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  border-bottom: 7px solid #c54b3c;
+  /* overflow: hidden; */
+}
+
+header .hero-content {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+header .hero-content .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .hero-content .hero-title .img-box {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+header .hero-content .hero-title img {
+  width: 30px;
+  margin: auto;
+}
+
+header .hero-content .hero-title p {
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-size: 15px;
+}
+
+header .hero-content .icon-sosmed {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+header .hero-content .hero-body {
+  height: 53.7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .hero-content .hero-body .box-1,
+header .hero-content .hero-body .box-2 {
+  width: 50%;
+  /* overflow: hidden; */
+}
+
+header .hero-content .hero-body .box-1 img {
+  width: 310px;
+  margin: auto;
+}
+
+header .hero-content .hero-body .box-2 h1,
+header .hero-content .hero-body .box-2 p {
+  margin: 30px 0px;
+}
+
+.google-play {
+  width: 30%;
+}
+
+/* Feature Section */
+.feature {
+  width: 100%;
+  height: 70vh;
+  background-color: #ffffff;
+}
+
+.feature .feature-content {
+  height: 70vh;
+  padding: 50px 0px;
+}
+
+.feature .feature-content .box {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+
+/* Responsive */
+
+/* Hp */
+@media screen and (max-width: 576px) {
+  header {
+    width: 100%;
+    background-position: center;
+    border: 0;
+  }
+  header::before {
+    content: "";
+    background-color: #c54b3c;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    opacity: 0.9;
+  }
+
+  header .hero-content .icon-sosmed {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Table Landscape */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
